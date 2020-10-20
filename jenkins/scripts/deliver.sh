@@ -23,4 +23,6 @@ set +x
 echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
-java -jar target/${NAME}-${VERSION}.jar
+#java -jar target/${NAME}-${VERSION}.jar
+docker build -t ardlal12/springdevopspocui .
+docker run -p 9000:8080 -t ardlal12/springdevopspocui --name springdevopspocui
