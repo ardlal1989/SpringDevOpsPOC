@@ -18,6 +18,18 @@ public class TestController {
 		
 		return employee;
 	}
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	@ResponseBody
+	public Employee firstPage() {
+
+		Employee emp = new Employee();
+		emp.setName("emp1");
+		emp.setDesignation("manager");
+		emp.setEmpId("1");
+		emp.setSalary(4000);
+
+		return emp;
+	}
 	@RequestMapping(value = "/")
 	public String hello()
 	{
