@@ -55,13 +55,7 @@
                     			</goals>
                 		     </execution>
             			</executions>
-				<configuration>
-				<archive>
-					<manifest>
-						<mainClass>com.javainuse.SpringBootHelloWorldApplication</mainClass>
-					</manifest>
-				</archive>
-			       </configuration>
+				
 			</plugin>
 			
 		</plugins>
